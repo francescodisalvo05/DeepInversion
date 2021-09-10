@@ -14,20 +14,14 @@ from __future__ import unicode_literals
 
 import argparse
 import torch
-from torch import distributed, nn
+
 import random
 import torch.nn as nn
 import torch.nn.parallel
 import torch.utils.data
-from torchvision import datasets, transforms
 
-import numpy as np
-import torch.cuda.amp as amp
-import os
 import torchvision.models as models
-from utils.utils import load_model_pytorch, distributed_is_initialized
-
-from models.segmentation_module_BiSeNet import make_model
+from utils.utils import load_model_pytorch,
 from models.build_BiSeNet import BiSeNet
 from models.segmentation_module_BiSeNet import IncrementalSegmentationBiSeNet
 
