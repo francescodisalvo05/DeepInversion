@@ -149,6 +149,8 @@ def denormalize(image_tensor, use_fp16=False):
     return image_tensor
 
 
+# LSE - LBA Pooling
+# https://github.com/maxunterwegs/WSUnet/blob/dbdd97a930c88465c2a449745360a3a1f1b5d078/model.py
 class CustomPooling(nn.Module):
     def __init__(self, beta=1, r_0=0, dim=(-1, -2), mode=None):
         super(CustomPooling, self).__init__()
