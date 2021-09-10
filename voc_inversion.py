@@ -21,7 +21,7 @@ import torch.nn.parallel
 import torch.utils.data
 
 import torchvision.models as models
-from utils.utils import load_model_pytorch,
+from utils.utils import load_model_pytorch
 from models.build_BiSeNet import BiSeNet
 from models.segmentation_module_BiSeNet import IncrementalSegmentationBiSeNet
 
