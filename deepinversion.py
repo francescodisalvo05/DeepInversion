@@ -338,7 +338,6 @@ class DeepInversionClass(object):
 
                         outputs_student = customPooling(outputs_student)
 
-                        T = 3.0
                         if 1:
                             T = 3.0
                             # Jensen Shanon divergence:
